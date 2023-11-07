@@ -1,0 +1,10 @@
+.husky
+**/Dockerfile
+**/Jenkinsfile
+**.svg
+**.webp
+.dockerignore
+.gitignore
+**.txt
+**.xml
+nginx.conf

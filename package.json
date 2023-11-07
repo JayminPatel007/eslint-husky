@@ -1,0 +1,30 @@
+{
+  "name": "eslint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "lint:check": "eslint",
+    "lint:check-all": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier:format": "prettier --config .prettierrc --write",
+    "prettier:format-all": "prettier --config .prettierrc . --write",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.0.2",
+    "prettier": "^3.0.3"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}
